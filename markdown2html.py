@@ -8,6 +8,7 @@ Usage: ./markdown2html.py <input_file.md> <output_file.html>
 import sys
 import markdown
 
+
 def convert_markdown_to_html(input_file, output_file):
     try:
         with open(input_file, 'r') as md_file:
@@ -21,9 +22,11 @@ def convert_markdown_to_html(input_file, output_file):
     with open(output_file, 'w') as html_file:
         html_file.write(html_content)
 
+
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: ./markdown2html.py <input_file.md> <output_file.html>", file=sys.stderr)
+        print("Usage: ./markdown2html.py <input_file.md>\
+              <output_file.html>", file=sys.stderr)
         sys.exit(1)
 
     input_file = sys.argv[1]
