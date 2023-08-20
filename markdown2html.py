@@ -10,6 +10,9 @@ import markdown
 
 
 def convert_markdown_to_html(input_file, output_file):
+    '''
+    Converts markdown file to HTML file
+    '''
     try:
         with open(input_file, 'r') as md_file:
             md_content = md_file.read()
